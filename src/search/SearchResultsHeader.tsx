@@ -22,7 +22,7 @@ function SearchResultsHeader({
       flexWrap="wrap"
     >
       <Typography variant="h6">Search Results For: {query}</Typography>
-      <Typography color="textSecondary">
+      <Typography sx={{ color: (theme) => theme.palette.text.secondary }}>
         Total {totalResults} Results
       </Typography>
     </Box>

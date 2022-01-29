@@ -42,7 +42,9 @@ function MovieIntroduction({ movie }: MovieIntroductionProps) {
             )}
           </Typography>
           {movie.tagline && (
-            <Typography color="textSecondary">{movie.tagline}</Typography>
+            <Typography sx={{ color: (theme) => theme.palette.text.secondary }}>
+              {movie.tagline}
+            </Typography>
           )}
         </Box>
       }

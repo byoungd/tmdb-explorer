@@ -31,7 +31,6 @@ function Recommendations({ movieId }: RecommendationsProps) {
       hasNextPage={!!hasNextPage}
       onLoadMore={fetchNextPage}
       renderItem={renderItem}
-      minItemWidth={260 / 2 - parseInt(theme.spacing(2))}
       listEmptyMessage="No recommendation has been found"
     />
   );

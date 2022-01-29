@@ -10,6 +10,7 @@ interface ProfileProps {
   loading: boolean;
 }
 
+// TODO: Rename props
 function Profile({
   introduction,
   main,
@@ -21,7 +22,7 @@ function Profile({
     <LoadingIndicator loading={loading}>
       <Box margin={-1}>
         <Box padding={1}>{introduction}</Box>
-        <Box display="flex" flexWrap="wrap">
+        <Box>
           {leftSide && (
             <Box flex={1} flexBasis={240} padding={1}>
               {leftSide}
